@@ -21,18 +21,22 @@ This is a simple RESTful API built with Node.js, Express, and MongoDB for managi
     
 2. Connect to mongodb database
 
+    ```
     PORT=3000  # Port number for the server
     MONGODB_URI=mongodb://localhost:27017/subscriberdb  # MongoDB connection URI
 
 
 3. Start development server
 
+    ```bash
     npm run devStart
     This will run the app in development mode with nodemon watching your files. Visit `http://localhost:${PORT}` to view the
 
 
 4. API Endpoints
     
+    ```
+    | Method | URL                        | Description                       | Access Control      |
     GET /subscribers - Get all subscribers
     GET /subscribers/:id - Get a single subscriber by ID
     POST /subscribers - Create a new subscriber
@@ -42,6 +46,7 @@ This is a simple RESTful API built with Node.js, Express, and MongoDB for managi
 5. Testing
     Request:
 
+    ```rest
     GET http://localhost:3000/subscribers
     Content-Type: application/json
 
@@ -49,10 +54,11 @@ This is a simple RESTful API built with Node.js, Express, and MongoDB for managi
         name: 'Gibson Dignity',
         subscribeToChanel: 'Youth Tech Hub'
     }
-
+    ```
 
     Response:
-    
+
+    ```json
     [
         {
             "_id": "609d9c8e6e4e543d88c3a636",
@@ -67,3 +73,4 @@ This is a simple RESTful API built with Node.js, Express, and MongoDB for managi
             "subscribedToChannel": "Updates"
         }
     ]
+    ```
