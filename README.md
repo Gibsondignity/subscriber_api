@@ -48,12 +48,7 @@ This is a simple RESTful API built with Node.js, Express, and MongoDB for managi
 
     ```rest
     GET http://localhost:3000/subscribers
-    Content-Type: application/json
-
-    {
-        name: 'Gibson Dignity',
-        subscribeToChanel: 'Youth Tech Hub'
-    }
+    
     ```
 
     Response:
